@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "browser-sync start -s \"src\" -f \".\""
+    "serve": "browser-sync start -s \"src\" -f \".\"",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
   },
   "babel": {
     "presets": [
