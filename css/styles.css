@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+}
+
+#pyramid {
+    font-family: "Courier New", monospace;
+    line-height: 0;
+    margin-top: 20px;
+    border-bottom: 3px solid darkred;
+}
+
+.cube-block {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-color: darkred;
+    margin: 2px;
+}
+
+input {
+    width: 50px;
+}
+
+button {
+    cursor: pointer;
+}
