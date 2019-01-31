@@ -1,5 +1,10 @@
 body {
     text-align: center;
+    font-size: 16px;
+}
+
+.panel {
+    height: content-box;
 }
 
 #pyramid {
@@ -15,6 +20,15 @@ body {
     display: inline-block;
     background-color: darkred;
     margin: 2px;
+}
+
+input#range {
+    width: 100px;
+    height: auto;
+}
+
+label {
+    margin-left: 20px;
 }
 
 input {

@@ -1,6 +1,9 @@
 const buildEl = document.getElementById('build');
 const heightEl = document.getElementById('height');
-const pyramidEl = document.querySelector('#pyramid');
+const pyramidEl = document.getElementById('pyramid');
+const chooseSymbolEl = document.getElementById('brick-symbol');
+const rangeSliderEl = document.getElementById('range');
+const rangeResultEl = document.getElementById('range-result');
 
 buildEl.addEventListener('click', function () {
     pyramidEl.textContent = "";
