@@ -5,6 +5,10 @@ const chooseSymbolEl = document.getElementById('brick-symbol');
 const rangeSliderEl = document.getElementById('range');
 const rangeResultEl = document.getElementById('range-result');
 
+rangeSliderEl.addEventListener('mousemove', () => {
+    rangeResultEl.innerHTML = rangeSliderEl.value;
+});
+
 buildEl.addEventListener('click', function () {
     pyramidEl.textContent = "";
     const height = parseInt(heightEl.value);

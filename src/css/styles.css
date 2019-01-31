@@ -4,7 +4,13 @@ body {
 }
 
 .panel {
-    height: content-box;
+    width: 100%;
+    display: inline;
+}
+
+.range-result {
+    width: 30px;
+    display: inline-block;
 }
 
 #pyramid {
@@ -24,15 +30,10 @@ body {
 
 input#range {
     width: 100px;
-    height: auto;
 }
 
 label {
-    margin-left: 20px;
-}
-
-input {
-    width: 50px;
+    margin-left: 10px;
 }
 
 button {
