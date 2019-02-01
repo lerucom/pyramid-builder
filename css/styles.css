@@ -1,12 +1,42 @@
 body {
     text-align: center;
+    font-size: 16px;
+    font-family: "Comic Sans MS";
+}
+
+section {
+    box-sizing: content-box;
+    width: 600px;
+    position: absolute;
+
+    background-color: deepskyblue;
+}
+
+h1 {
+    background-color: gold;
+}
+
+.row {
+    box-sizing: content-box;
+}
+
+.panel {
+    width: 100%;
+    display: inline;
+}
+
+.range-result {
+    width: 30px;
+    display: inline-block;
 }
 
 #pyramid {
     font-family: "Courier New", monospace;
     line-height: 0;
     margin-top: 20px;
-    border-bottom: 3px solid darkred;
+    display: block;
+    text-align: right;
+    margin-right: 10%;
 }
 
 .cube-block {
@@ -15,12 +45,18 @@ body {
     display: inline-block;
     background-color: darkred;
     margin: 2px;
+    text-align: center;
+    line-height: initial;
 }
 
-input {
-    width: 50px;
+input#range {
+    width: 100px;
 }
 
-button {
+label {
+    margin-left: 30px;
+}
+
+button, input, select {
     cursor: pointer;
 }
