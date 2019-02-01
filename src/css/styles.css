@@ -1,6 +1,23 @@
 body {
     text-align: center;
     font-size: 16px;
+    font-family: "Comic Sans MS";
+}
+
+section {
+    box-sizing: content-box;
+    width: 600px;
+    position: absolute;
+
+    background-color: deepskyblue;
+}
+
+h1 {
+    background-color: gold;
+}
+
+.row {
+    box-sizing: content-box;
 }
 
 .panel {
@@ -13,20 +30,13 @@ body {
     display: inline-block;
 }
 
-.row {
-    /*float: right;*/
-    display: block;
-    width: 60%;
-}
-
 #pyramid {
     font-family: "Courier New", monospace;
     line-height: 0;
     margin-top: 20px;
     display: block;
-    width: 100%;
     text-align: right;
-    right: 50px;
+    margin-right: 10%;
 }
 
 .cube-block {
@@ -35,6 +45,8 @@ body {
     display: inline-block;
     background-color: darkred;
     margin: 2px;
+    text-align: center;
+    line-height: initial;
 }
 
 input#range {
@@ -42,7 +54,7 @@ input#range {
 }
 
 label {
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 button, input, select {

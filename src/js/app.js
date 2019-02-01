@@ -4,9 +4,30 @@ const pyramidEl = document.getElementById('pyramid');
 const chooseSymbolEl = document.getElementById('brick-symbol');
 const rangeSliderEl = document.getElementById('range');
 const rangeResultEl = document.getElementById('range-result');
+let optionEl;
+const height = parseInt(rangeSliderEl.value);
+drawPyramid(height);
+
+
+chooseSymbolEl.addEventListener('change', () => {
+    pyramidEl.textContent = '';
+    optionEl = chooseSymbolEl.value;
+    const height = parseInt(rangeSliderEl.value);
+    drawPyramid(height);
+});
 
 rangeSliderEl.addEventListener('mousemove', () => {
+    pyramidEl.textContent = '';
     rangeResultEl.innerHTML = rangeSliderEl.value;
+    const height = parseInt(rangeSliderEl.value);
+    drawPyramid(height);
+});
+
+rangeSliderEl.addEventListener('keyup', () => {
+    pyramidEl.textContent = '';
+    rangeResultEl.innerHTML = rangeSliderEl.value;
+    const height = parseInt(rangeSliderEl.value);
+    drawPyramid(height);
 });
 
 buildEl.addEventListener('click', function () {
@@ -25,6 +46,7 @@ function drawPyramid(height) {
         for (let j = 0; j < heightOfPyramid - i; j++) {
             const cube = document.createElement('div');
             cube.className = 'cube-block';
+            cube.textContent = optionEl;
             pyramidLevel.appendChild(cube);
         }
         // каждую строку добавляем в пирамиду

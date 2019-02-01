@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<section>
 <h1>Behold this wonderful pyramid:</h1>
 <div class="panel">
     <label for="brick-symbol">Brick Symbol</label>
     <select name="brick-symbol" id="brick-symbol">
+        <option value="" selected></option>
         <option value="#">#</option>
         <option value="@">@</option>
         <option value="X">X</option>
@@ -24,13 +26,14 @@
     <input type="range" id="range" value="5" min="1" max="20">
     <div class="range-result"><span id="range-result">5</span></div>
 
-    <label for="height">Height of Pyramid</label>
-    <input id="height" type="number">
-    <button id="build">Build!</button>
+    <!--<label for="height">Height of Pyramid</label>-->
+    <!--<input id="height" type="number">-->
+    <!--<button id="build">Build!</button>-->
 </div>
 
 <div id="pyramid">
 </div>
+</section>
 <script src="js/app.js"></script>
 </body>
 </html>
