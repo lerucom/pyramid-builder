@@ -31,3 +31,4 @@ function drawPyramid(height) {
         pyramidEl.prepend(pyramidLevel);
     }
 }
+

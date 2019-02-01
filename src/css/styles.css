@@ -13,11 +13,20 @@ body {
     display: inline-block;
 }
 
+.row {
+    /*float: right;*/
+    display: block;
+    width: 60%;
+}
+
 #pyramid {
     font-family: "Courier New", monospace;
     line-height: 0;
     margin-top: 20px;
-    border-bottom: 3px solid darkred;
+    display: block;
+    width: 100%;
+    text-align: right;
+    right: 50px;
 }
 
 .cube-block {
@@ -36,6 +45,6 @@ label {
     margin-left: 10px;
 }
 
-button {
+button, input, select {
     cursor: pointer;
 }
