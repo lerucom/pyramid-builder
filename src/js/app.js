@@ -1,5 +1,3 @@
-const buildEl = document.getElementById('build');
-const heightEl = document.getElementById('height');
 const pyramidEl = document.getElementById('pyramid');
 const chooseSymbolEl = document.getElementById('brick-symbol');
 const rangeSliderEl = document.getElementById('range');
@@ -16,24 +14,14 @@ chooseSymbolEl.addEventListener('change', () => {
     drawPyramid(height);
 });
 
-rangeSliderEl.addEventListener('mousemove', () => {
-    pyramidEl.textContent = '';
-    rangeResultEl.innerHTML = rangeSliderEl.value;
-    const height = parseInt(rangeSliderEl.value);
-    drawPyramid(height);
-});
-
-rangeSliderEl.addEventListener('keyup', () => {
-    pyramidEl.textContent = '';
-    rangeResultEl.innerHTML = rangeSliderEl.value;
-    const height = parseInt(rangeSliderEl.value);
-    drawPyramid(height);
-});
-
-buildEl.addEventListener('click', function () {
-    pyramidEl.textContent = "";
-    const height = parseInt(heightEl.value);
-    drawPyramid(height);
+rangeSliderEl.addEventListener('mousemove', (evt) => {
+    if (event.which === 1) {
+        pyramidEl.textContent = '';
+        rangeResultEl.innerHTML = rangeSliderEl.value;
+        const height = parseInt(rangeSliderEl.value);
+        console.log(evt);
+        drawPyramid(height);
+    }
 });
 
 function drawPyramid(height) {
